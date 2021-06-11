@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "simplaex frontend challenge",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seeedy/simplaex-challenge"
+  },
   "scripts": {
-    "start": "webpack serve --mode development",
-    "dev": "webpack --mode development",
+    "start": "node ./index.js",
     "build": "webpack --mode production --config ./webpack.config.js",
-    "test": "test"
+    "test": "jest"
   },
   "author": "Christian Siedentop",
   "license": "ISC",
@@ -16,9 +19,8 @@
   },
   "devDependencies": {
     "html-webpack-plugin": "^5.3.1",
-    "plugin": "^0.3.3",
+    "jest": "^27.0.4",
     "webpack": "^5.38.1",
-    "webpack-cli": "^4.7.2",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-cli": "^4.7.2"
   }
 }
