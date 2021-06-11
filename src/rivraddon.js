@@ -20,4 +20,4 @@ rivraddon = {
   },
 };
 
-export default rivraddon;
+module.exports = rivraddon;
