@@ -8,11 +8,11 @@ rivraddon = {
       );
     },
     trackPbjsEvent: function (e) {
-      var params = {
+      const params = {
         eventType: e.eventType,
       };
 
-      var http = new XMLHttpRequest();
+      const http = new XMLHttpRequest();
       http.open('POST', 'https://tracker.simplaex-code-challenge.com');
       http.setRequestHeader('Content-type', 'application/json');
       http.send(JSON.stringify(params));
